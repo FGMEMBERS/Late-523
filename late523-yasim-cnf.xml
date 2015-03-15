@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+************************************************************************
+Latécoère 523
+December 2008 BARANGER Emmanuel
+************************************************************************
+-->
+
+<PropertyList include="late523-base.xml">
+
+  <sim>
+
+    <description>Latecoere 523 (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>late523-yasim</aero>
+
+  </sim>
+    
+</PropertyList>

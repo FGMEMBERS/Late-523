@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>late523.ac</path>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Late-523/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
+  <animation>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>derive</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>direction</object-name>
+    <object-name>flotteurs</object-name>
+    <object-name>moteurs</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronG2</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>aileronD2</object-name>
+    <object-name>barres</object-name>
+
+    <!-- Transparence -->
+    <object-name>vitres</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass_shader.png</texture>
+    <object-name>vitres</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitres</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>derive</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>direction</object-name>
+    <object-name>flotteurs</object-name>
+    <object-name>moteurs</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronG2</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>aileronD2</object-name>
+    <object-name>barres</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
+  </animation>
+
+  <!-- Interieur -->
+  <model>
+    <path>Aircraft/Late-523/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+      <roll-deg>    0.0 </roll-deg>
+      <pitch-deg>   0.0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Trainée Centrale -->
+  <model>
+    <path>Aircraft/Late-523/Models/Effects/fuselage.xml</path>
+    <offsets>
+      <x-m> -1.499 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -4.717 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -45.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Trainée Arrière -->
+  <model>
+    <path>Aircraft/Late-523/Models/Effects/fuselage.xml</path>
+    <offsets>
+      <x-m>  9.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -3.292 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -45.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Trainée fuselage gauche -->
+  <model>
+    <path>Aircraft/Late-523/Models/Effects/fuselageG.xml</path>
+    <offsets>
+      <x-m> -1.216 </x-m>
+      <y-m> -7.232 </y-m>
+      <z-m> -3.850 </z-m>
+      <roll-deg>    45.000 </roll-deg>
+      <pitch-deg>  -45.000 </pitch-deg>
+      <heading-deg>  0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Trainée fuselage droite -->
+  <model>
+    <path>Aircraft/Late-523/Models/Effects/fuselageD.xml</path>
+    <offsets>
+      <x-m> -1.216 </x-m>
+      <y-m>  7.232 </y-m>
+      <z-m> -3.850 </z-m>
+      <roll-deg>    -45.000 </roll-deg>
+      <pitch-deg>   -45.000 </pitch-deg>
+      <heading-deg>   0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Moteur extérieur gauche -->
+  <model>
+    <path>Aircraft/Late-523/Models/Engines/engine0.xml</path>
+    <offsets>
+      <x-m> -7.048 </x-m>
+      <y-m> -7.571 </y-m>
+      <z-m>  0.529 </z-m>
+      <roll-deg>    -5.0 </roll-deg>
+      <pitch-deg>    0.0 </pitch-deg>
+      <heading-deg>  0.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Moteur intérieur gauche -->
+  <model>
+    <path>Aircraft/Late-523/Models/Engines/engine0.xml</path>
+    <offsets>
+      <x-m> -7.451 </x-m>
+      <y-m> -3.307 </y-m>
+      <z-m>  0.237 </z-m>
+      <roll-deg>    -5.0 </roll-deg>
+      <pitch-deg>    0.0 </pitch-deg>
+      <heading-deg>  0.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Moteur arrière gauche -->
+  <model>
+    <path>Aircraft/Late-523/Models/Engines/engine0.xml</path>
+    <offsets>
+      <x-m> -0.177 </x-m>
+      <y-m> -3.307 </y-m>
+      <z-m>  0.237 </z-m>
+      <roll-deg>      5.0 </roll-deg>
+      <pitch-deg>     0.0 </pitch-deg>
+      <heading-deg> 180.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Moteur extérieur droit -->
+  <model>
+    <path>Aircraft/Late-523/Models/Engines/engine0.xml</path>
+    <offsets>
+      <x-m> -7.048 </x-m>
+      <y-m>  7.571 </y-m>
+      <z-m>  0.529 </z-m>
+      <roll-deg>    5.0 </roll-deg>
+      <pitch-deg>   0.0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Moteur intérieur droit -->
+  <model>
+    <path>Aircraft/Late-523/Models/Engines/engine0.xml</path>
+    <offsets>
+      <x-m> -7.451 </x-m>
+      <y-m>  3.307 </y-m>
+      <z-m>  0.237 </z-m>
+      <roll-deg>    5.0 </roll-deg>
+      <pitch-deg>   0.0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Moteur arrière droit -->
+  <model>
+    <path>Aircraft/Late-523/Models/Engines/engine0.xml</path>
+    <offsets>
+      <x-m> -0.177 </x-m>
+      <y-m>  3.307 </y-m>
+      <z-m>  0.237 </z-m>
+      <roll-deg>     -5.0 </roll-deg>
+      <pitch-deg>     0.0 </pitch-deg>
+      <heading-deg> 180.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Animations des ailerons -->
+  <animation>
+    <name>AileronsGauches</name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronG2</object-name>
+  </animation>
+
+  <animation>
+    <name>AileronsDroits</name>
+    <object-name>aileronD</object-name>
+    <object-name>aileronD2</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>AileronsGauches</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>15.0</factor>
+    <axis>
+      <x1-m>   1.264 </x1-m>
+      <y1-m> -19.720 </y1-m>
+      <z1-m>   1.908 </z1-m>
+      <x2-m>   0.107 </x2-m>
+      <y2-m>  -7.171 </y2-m>
+      <z2-m>   0.785 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>AileronsDroits</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor>15.0</factor>
+    <axis>
+      <x1-m>  0.107 </x1-m>
+      <y1-m>  7.171 </y1-m>
+      <z1-m>  0.785 </z1-m>
+      <x2-m>  1.264 </x2-m>
+      <y2-m> 19.720 </y2-m>
+      <z2-m>  1.908 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Gouverne de profondeur -->
+  <animation>
+    <type>rotate</type>
+    <object-name>profondeur</object-name>
+    <property>controls/flight/elevator</property>
+    <factor> 15 </factor>
+    <center>
+      <x-m> 13.823 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.125 </z-m>
+    </center>
+    <axis>
+      <x> 0.00 </x>
+      <y> 1.00 </y>
+      <z> 0.00 </z>
+    </axis>
+  </animation> --> 
+
+  <!-- Gouverne de direction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>direction</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>15.0</factor>
+    <center>
+      <x-m> 13.903 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.060 </z-m>
+    </center>
+    <axis>
+      <x>  0.00 </x>
+      <y>  0.00 </y>
+      <z> -1.00 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="late523-jsbsim-cnf.xml"> -->
+<PropertyList include="late523-yasim-cnf.xml">
+
+  <sim>
+    <description>Latecoere 523</description>
+    <author>BARANGER Emmanuel</author>
+  </sim>
+
+</PropertyList>
+
